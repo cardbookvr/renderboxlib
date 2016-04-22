@@ -4,7 +4,11 @@
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
-/build/*/*/*
+/build
 /captures
 
-!/build/outputs/aar/renderbox-debug.aar
+/renderbox/build/*
+!/renderbox/build/outputs/
+/renderbox/build/outputs/*
+!/renderbox/build/outputs/aar/
+/renderbox/build/outputs/aar/renderbox-release.aar
