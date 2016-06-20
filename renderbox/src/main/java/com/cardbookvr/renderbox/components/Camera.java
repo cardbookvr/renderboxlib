@@ -8,7 +8,7 @@ import com.cardbookvr.renderbox.RenderBox;
 import com.cardbookvr.renderbox.Transform;
 import com.cardbookvr.renderbox.materials.Material;
 import com.cardbookvr.renderbox.math.Vector3;
-import com.google.vrtoolkit.cardboard.Eye;
+import com.google.vr.sdk.base.Eye;
 
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
