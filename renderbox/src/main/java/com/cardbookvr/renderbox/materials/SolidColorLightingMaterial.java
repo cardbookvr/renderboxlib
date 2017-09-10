@@ -98,4 +98,7 @@ public class SolidColorLightingMaterial extends Material {
         GLES20.glDrawElements(GLES20.GL_TRIANGLES, numIndices, GLES20.GL_UNSIGNED_SHORT, indexBuffer);
     }
 
+    public static void destroy(){
+        program = -1;
+    }
 }
