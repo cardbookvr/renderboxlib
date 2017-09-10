@@ -103,4 +103,8 @@ public class UnlitTexMaterial extends Material {
         RenderBox.checkGLError("Unlit Texture draw");
     }
 
+    public static void destroy(){
+        program = -1;
+    }
+
 }

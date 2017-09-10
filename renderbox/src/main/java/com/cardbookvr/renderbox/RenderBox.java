@@ -11,6 +11,11 @@ import android.util.Log;
 import com.cardbookvr.renderbox.components.Camera;
 import com.cardbookvr.renderbox.components.Light;
 import com.cardbookvr.renderbox.components.RenderObject;
+import com.cardbookvr.renderbox.materials.BorderMaterial;
+import com.cardbookvr.renderbox.materials.DayNightMaterial;
+import com.cardbookvr.renderbox.materials.DiffuseLightingMaterial;
+import com.cardbookvr.renderbox.materials.SolidColorLightingMaterial;
+import com.cardbookvr.renderbox.materials.UnlitTexMaterial;
 import com.cardbookvr.renderbox.materials.VertexColorLightingMaterial;
 import com.cardbookvr.renderbox.materials.VertexColorMaterial;
 import com.google.vr.sdk.base.Eye;
@@ -98,9 +103,13 @@ public class RenderBox implements GvrView.StereoRenderer {
      recompiled for a "fresh" activity
      */
     public static void reset(){
-        VertexColorMaterial.destroy();
+        BorderMaterial.destroy();
+        DayNightMaterial.destroy();
+        DiffuseLightingMaterial.destroy();
+        SolidColorLightingMaterial.destroy();
+        UnlitTexMaterial.destroy();
         VertexColorLightingMaterial.destroy();
-
+        VertexColorMaterial.destroy();
     }
 
     /**
