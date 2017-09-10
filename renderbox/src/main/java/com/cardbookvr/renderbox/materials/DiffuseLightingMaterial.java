@@ -118,4 +118,7 @@ public class DiffuseLightingMaterial extends Material {
         RenderBox.checkGLError("Diffuse Texture Color Lighting draw");
     }
 
+    public static void destroy(){
+        program = -1;
+    }
 }
