@@ -126,5 +126,8 @@ public class DayNightMaterial extends Material {
         RenderBox.checkGLError("DayNight Texture Color Lighting draw");
     }
 
+    public static void destroy(){
+        program = -1;
+    }
 }
 
